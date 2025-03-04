@@ -14,13 +14,17 @@ O PATH é uma variável de ambiente que armazena os diretórios onde o shell bus
 - Um editor de texto como nano, vim, ou qualquer outro editor de sua preferência.
 
 Passo 1: Verifique o PATH Atual digitando o comando abaixo no terminal do Linux</br>
-`echo $PATH`
+```sh
+echo $PATH
+```
 
 A saída será uma lista de diretórios separados por ":". Nosso objetivo é transformar esses diretórios em uma lista exibida linha por linha.
 
 **Passo 2: Teste o Comando no Terminal**</br>
 O comando que utilizaremos para formatar o PATH é:</br>
-`echo $PATH | tr ':' '\n'`
+```sh
+echo $PATH | tr ':' '\n'
+```
 
 - echo $PATH: Imprime o conteúdo da variável PATH.
 - |: O operador pipe passa a saída do comando anterior como entrada para o próximo comando.
@@ -34,13 +38,15 @@ Para evitar digitar o comando completo toda vez, você pode criar um alias.
 1) Abra o arquivo de configuração do shell:
 
    Para usuários do Bash, o arquivo geralmente é o `~/.bashrc ou ~/.zshrc`. Abra-o com seu editor preferido:
-
-   `nano ~/.bashrc ou nano ~/.zshrc`
+   ```sh
+   nano ~/.bashrc ou nano ~/.zshrc
+   ```
 
 2) Adicione o alias ao final do arquivo:
    No editor, adicione a seguinte linha:
-
-   `alias mypath='echo $PATH | tr ":" "\n"'`
+   ```sh
+   alias mypath='echo $PATH | tr ":" "\n"'
+   ```
 
 3) Salve e feche o arquivo:
    No nano, pressione `Ctrl+O` para salvar e `Ctrl+X` para sair.
@@ -54,7 +60,9 @@ Para evitar digitar o comando completo toda vez, você pode criar um alias.
    ```
 **Passo 4: Use o Alias**
 Agora, você pode usar o alias `mypath` para listar os diretórios do PATH linha por linha:</br>
-`mypath`
+```sh
+mypath
+```
 
 A saída será semelhante a esta:
 
