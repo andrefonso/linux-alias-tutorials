@@ -39,7 +39,8 @@ Para evitar digitar o comando completo toda vez, você pode criar um alias.
 
    Para usuários do Bash, o arquivo geralmente é o `~/.bashrc ou ~/.zshrc`. Abra-o com seu editor preferido:
    ```sh
-   nano ~/.bashrc ou nano ~/.zshrc
+   nano ~/.bashrc
+   nano ~/.zshrc
    ```
 
 2) Adicione o alias ao final do arquivo:
